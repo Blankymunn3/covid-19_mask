@@ -1,0 +1,39 @@
+
+        code:
+          type: string
+          description: 식별 코드
+        name:
+          type: string
+          description: 이름
+          format: YYYY-MM-DD
+        addr:
+          type: string
+          description: 주소
+        lat:
+          type: number
+          format: float
+          description: 위도
+        lng:
+          type: number
+          format: float
+          description: 경도
+        stock_t:
+          type: string
+          description: 입고시간
+          format: HH:mm
+        stock_cnt:
+          type: integer
+          description: 입고 수량
+        sold_cnt:
+          type: integer
+          description: 판매 수량
+        remain_cnt:
+          type: integer
+          description: 재고 수량
+        sold_out:
+          type: boolean
+          description: 완판 여부(true 일경우 판매 종료)
+        created_at:
+          type: string
+          description: 데이터 생성 일자
+          format: YYYY/MM/DD HH:mm:ss
